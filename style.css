@@ -11,6 +11,7 @@ header {
     top: 0px;
 }
 
+
 nav {
     margin-top: .5%;
     display: flex;
@@ -26,14 +27,14 @@ nav {
     color: rgb(187, 163, 130);
     text-transform: uppercase;
     letter-spacing: 5px;
-    font-size: larger;
+    font-size: x-large;
     font-weight: 700;
 }
 
 .nav-links {
     color: rgb(187, 163, 130);
     width: 60%;
-    font-weight: 300;
+    font-weight: 600;
     justify-content: space-around;
     display: flex;
 }
@@ -71,8 +72,8 @@ nav {
 
 .img-text {
     margin-left: 1%;
-    width: 250px;
-    height: 200px;
+    width: 500px;
+    height: 455px;
     margin-top: 3%;
     border-radius: 50%;
     filter: drop-shadow(0px 7px 5px black);
@@ -80,14 +81,16 @@ nav {
 }
 
 .col {
-    padding: 10%;
-    align-items: center;
+    padding: 15%;
+    align-items: flex-start;
     font-family: 'Montserrat', sans-serif;
+    font-size: x-large;
+    font-weight: 700;
 
 
 }
 
-@media screen and (max-width:375px) {
+@media screen and (max-width:768px) {
 
     body {
         overflow-x: hidden;
@@ -147,24 +150,17 @@ nav {
 }
 
 section {
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    height: 100vh;
 }
 
-h1 {
-    color: rgb(187, 163, 130);
+h2 {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    text-shadow: #1F1C2C;
+    font-size: xx-large;
+    font-weight: 700s;
+
 }
-
-#about {
-    font-size: large;
-    text-align: left;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    text-align-last: left;
-}
-
-
 
 .home {
     background: linear-gradient(to right top, #EFEFBB, #D4D3DD);
