@@ -70,8 +70,8 @@ nav {
 
 .img-text {
     margin-left: 1%;
-    width: 190px;
-    height: 160px;
+    width: 250px;
+    height: 200px;
     margin-top: 3%;
     border-radius: 50%;
     filter: drop-shadow(0px 7px 5px black);
@@ -157,7 +157,7 @@ h1 {
 }
 
 #about {
-    font-size: x-small;
+    font-size: small;
     text-align: left;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-align-last: left;
