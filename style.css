@@ -5,12 +5,27 @@
 
 }
 
-header {
+.home {
+    background: linear-gradient(to right top, #EFEFBB, #D4D3DD);
+}
 
+.about {
+    background: linear-gradient(to right bottom, #FFEEEE, #DDEFBB);
+}
+
+.project {
+    background: linear-gradient(to right top, #DAE2F8, #D6A4A4);
+}
+
+.contact {
+    background: linear-gradient(to right top, #CC95C0, #DBD4B4, #7AA1D2);
+}
+
+/* Style the nav bar*/
+header {
     position: sticky;
     top: 0px;
 }
-
 
 nav {
     margin-top: .5%;
@@ -68,27 +83,6 @@ nav {
     margin: 5px;
 }
 
-
-
-.img-text {
-    margin-left: 1%;
-    width: 500px;
-    height: 455px;
-    margin-top: 3%;
-    border-radius: 50%;
-    filter: drop-shadow(0px 7px 5px black);
-
-}
-
-.col {
-    padding: 15%;
-    align-items: flex-start;
-    font-family: 'Montserrat', sans-serif;
-    font-size: x-large;
-    font-weight: 700;
-
-
-}
 
 @media screen and (max-width:768px) {
 
@@ -149,31 +143,88 @@ nav {
     transform: rotate(-45deg) translate(-5px, -6px);
 }
 
-section {
-    height: 100vh;
-}
 
-h2 {
-    text-align: center;
-    font-family: 'Montserrat', sans-serif;
-    text-shadow: #1F1C2C;
-    font-size: xx-large;
-    font-weight: 700s;
 
-}
+/* Style section 1 */
 
 .home {
-    background: linear-gradient(to right top, #EFEFBB, #D4D3DD);
+    min-height: 90vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
+.container1 {
+    margin-top: 10px;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.left {
+    width: 90%;
+    margin: 0 auto;
+    height: 500px;
+    background: url(../img/section1.jpeg) no-repeat center / cover;
+    border-radius: 15px;
+
+}
+
+.right {
+    margin-bottom: auto;
+    display: flex;
+    background: linear-gradient(to right top, #1F1C2C, #928DAB);
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    border-radius: 15px;
+    color: rgb(187, 163, 130);
+
+}
+
+.right h1 {
+    font-size: 40px;
+    font-weight: 800;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+.right h2 {
+    margin: 20px 0;
+    font-weight: 500;
+    line-height: 25px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Style the about section*/
 
 .about {
-    background: linear-gradient(to right bottom, #FFEEEE, #DDEFBB);
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.project {
-    background: linear-gradient(to right top, #DAE2F8, #D6A4A4);
+.container2 {
+    margin-top: 10px;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.contact {
-    background: linear-gradient(to right top, #CC95C0, #DBD4B4, #7AA1D2);
+.container2 h2 {
+    font-size: 60px;
+    font-weight: 800;
+    color: rgb(187, 163, 130);
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container2 p {
+    margin-left: 3%;
+    font-family: 'Cormorant', serif;
+    font-size: larger;
 }
