@@ -157,7 +157,7 @@ nav {
 
 .container1 {
     margin-top: 10px;
-    width: 80%;
+    width: 90%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -167,7 +167,7 @@ nav {
     width: 90%;
     margin: 0 auto;
     height: 500px;
-    background: url(../img/section1.jpeg) no-repeat center / cover;
+    background: url(../img/frontend.jpeg) no-repeat center / cover;
     border-radius: 15px;
 
 }
@@ -182,7 +182,9 @@ nav {
     border-radius: 15px;
     color: rgb(187, 163, 130);
 
+
 }
+
 
 .right h1 {
     font-size: 40px;
