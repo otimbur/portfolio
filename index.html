@@ -20,16 +20,14 @@
 <body>
     <!--Create the Navigation Bar-->
     <header>
-        <nav>
-            <div class="logo">
-                <h4>Nav</h4>
-            </div>
-            <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#project">Projects</a></li>
-
-                <li><a href="#contact">Connect</a></li>
+        <span class="logo">Nav</span>
+        <i id="toggle" class="fa fa-bars"></i>
+        <nav class="navbar">
+            <ul class="list">
+                <li class="item"><a href="#home">Home</a></li>
+                <li class="item"><a href="#about">About</a></li>
+                <li class="item"><a href="#project">Projects</a></li>
+                <li class="item"><a href="#contact">Connect</a></li>
 
             </ul>
 
@@ -47,17 +45,28 @@
           The class home it will be used to create a specific background for the section-->
     <section id="home" class="home">
         <div class="container">
-            <div class="img">
-                <img src="img/image2.jpg">
-            </div>
-            <div class="glass">
-                <h1>Olga Timbur</h1>
-                <h2>Software developer</h2>
-                <div class="link">
-                    <a href="https://www.linkedin.com/in/olga-timbur-072817236/"> Linkedin</a>
+            <div class="row">
+                <div class="col">
+                    <div class="img">
+                        <img id="home-image" src="img/img2.JPEG">
+                    </div>
+                    <div class="glass">
+                        <h1>Olga Timbur</h1>
+                        <h2>Software developer</h2>
+                        <div class="link">
+                            <a href="https://www.linkedin.com/in/olga-timbur-072817236/"> Linkedin</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <h1 class="heading" data-target-resolver></h1>
                 </div>
             </div>
         </div>
+
+        </div>
+
     </section>
 
     <!-- The About section-->
@@ -72,7 +81,7 @@
             <div id="p1" class="paper ">
                 <div class="front">
                     <div id="f1" class="front-content">
-                        <img id="aboutp" src="img/image0.jpeg">
+                        <img id="image-about" src="img/image0.jpeg">
                     </div>
                 </div>
                 <div class="back">
@@ -86,13 +95,22 @@
                 <div class="front">
                     <div id="f2" class="front-content">
                         <p>
+                            I am Olga, an emerging professional in software development.
+                            In the las 6 years I worked in banking and the medical field. I managed to
+                            determine my client's necessities and represent their financial and medical needs.
+                            Using the base knowledge, I acquired new skills through self-education and
+                            motivation.
+                            Currently, I code in HTML, CSS, and JavaScript.
+                            This page is one of my projects
+
 
                         </p>
                     </div>
                 </div>
                 <div class="back">
                     <div id="b2" class="back-content">
-                        <h1>Back2</h1>
+                        <h1>30 Seconds Pitch</h1>
+
                     </div>
                 </div>
             </div>
@@ -100,12 +118,13 @@
             <div id="p3" class="paper">
                 <div class="front">
                     <div id="f3" class="front-content">
-                        <h1>Front3</h1>
+                        <video id="video" controls>
+
+                        </video>
                     </div>
                 </div>
                 <div class="back">
                     <div id="b3" class="back-content">
-                        <h1>Back3</h1>
                     </div>
                 </div>
             </div>
@@ -116,10 +135,6 @@
         <button id="next-btn">
             <i class="fa-solid fa-angle-right"></i>
         </button>
-
-
-
-
 
     </section>
 
