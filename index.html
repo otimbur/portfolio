@@ -41,43 +41,84 @@
 
         </nav>
     </header>
+
     <!--create the About me content-->
     <!-- Id is used for linking the nav bar with the section
           The class home it will be used to create a specific background for the section-->
     <section id="home" class="home">
-
-        <div class="container1">
-            <div class="left">
-                <div class="right">
-                    <div class="content">
-                        <h1>Olga Timbur</h1>
-                        <h2>Software developer</h2>
-                    </div>
+        <div class="container">
+            <div class="img">
+                <img src="img/image2.jpg">
+            </div>
+            <div class="glass">
+                <h1>Olga Timbur</h1>
+                <h2>Software developer</h2>
+                <div class="link">
+                    <a href="https://www.linkedin.com/in/olga-timbur-072817236/"> Linkedin</a>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- The About section-->
     <section id="about" class="about">
-        <div class="container2">
-            <h2>About</h2>
-            <p>
-                My name is Olga Timbur. My passion for work comes from the desire for knowledge and the struggle my
-                parents had to provide for me. Originally from Moldova,
-                I had to emigrate when I was 20 years old for a better future like many of my people.
-                I am happy to affirm that this experience taught me a lot about life and motivation
-                In my work experience, I learned that I could achieve skills through hard work.
-                Banking was one field I knew nothing about, but training and work made me gain skills
-                such as customer service, sales, and teamwork skills. Following the line, I soon transitioned to the
-                medical field, where multitasking, critical thinking, and productivity were significant components.
-                This new experience made me realize that I can have a job in the tech field if I work hard. For many
-                years,
-                this was my goal, but my insecurities had to be destroyed.
-                I am glad to say that today I am an emerging professional in the Application Development
-                track in a program called YearUp and what are you reading right now is part my traning to gain
-                skills in the HTML and CSS and JavaScript
-            </p>
+        <!--Back buttom-->
+        <button id="back-btn">
+            <i class="fa-solid fa-angle-left"></i>
+        </button>
+        <!--Book-->
+        <div id="book" class="book">
+            <!--Paper 1-->
+            <div id="p1" class="paper ">
+                <div class="front">
+                    <div id="f1" class="front-content">
+                        <img id="aboutp" src="img/image0.jpeg">
+                    </div>
+                </div>
+                <div class="back">
+                    <div id="b1" class="back-content">
+                        <h1>About me </h1>
+                    </div>
+                </div>
+            </div>
+            <!--Paper 2-->
+            <div id="p2" class="paper">
+                <div class="front">
+                    <div id="f2" class="front-content">
+                        <p>
+
+                        </p>
+                    </div>
+                </div>
+                <div class="back">
+                    <div id="b2" class="back-content">
+                        <h1>Back2</h1>
+                    </div>
+                </div>
+            </div>
+            <!--Paper 3-->
+            <div id="p3" class="paper">
+                <div class="front">
+                    <div id="f3" class="front-content">
+                        <h1>Front3</h1>
+                    </div>
+                </div>
+                <div class="back">
+                    <div id="b3" class="back-content">
+                        <h1>Back3</h1>
+                    </div>
+                </div>
+            </div>
         </div>
+
+        <!-- Next btn-->
+
+        <button id="next-btn">
+            <i class="fa-solid fa-angle-right"></i>
+        </button>
+
+
+
 
 
     </section>
@@ -91,7 +132,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
         crossorigin="anonymous"></script>
-    <script src="app.js"></script>
+    <script src="app.js" defer></script>
+    <script src="https://kit.fontawesome.com/d447b54254.js" crossorigin="anonymous"></script>
 </body>
 
 </html>

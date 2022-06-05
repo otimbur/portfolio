@@ -6,11 +6,11 @@
 }
 
 .home {
-    background: linear-gradient(to right top, #EFEFBB, #D4D3DD);
+    background: linear-gradient(to right top, #CC95C0, #DBD4B4, #7AA1D2);
 }
 
 .about {
-    background: linear-gradient(to right bottom, #FFEEEE, #DDEFBB);
+    background: linear-gradient(to right top, #CC95C0, #DBD4B4, #7AA1D2);
 }
 
 .project {
@@ -24,32 +24,34 @@
 /* Style the nav bar*/
 header {
     position: sticky;
-    top: 0px;
+
 }
 
 nav {
-    margin-top: .5%;
+    height: 100px;
     display: flex;
     align-items: center;
     justify-content: space-around;
-    background: linear-gradient(to right top, #1F1C2C, #928DAB);
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 700;
+    background: linear-gradient(to right top, #20002c, #cbb4d4);
     scroll-behavior: smooth;
+    font-family: 'Cormorant', serif;
+
 }
 
-.logo {
+.logo h4 {
+    display: block;
+    padding: 8px;
     color: rgb(187, 163, 130);
     text-transform: uppercase;
-    letter-spacing: 5px;
-    font-size: x-large;
-    font-weight: 700;
+    text-decoration: none;
+    letter-spacing: 6px;
+    font-size: xx-large;
+    font-weight: 900;
 }
 
 .nav-links {
     color: rgb(187, 163, 130);
-    width: 60%;
-    font-weight: 600;
+    width: 70%;
     justify-content: space-around;
     display: flex;
 }
@@ -64,10 +66,10 @@ nav {
     padding: 8px;
     color: rgb(187, 163, 130);
     text-decoration: none;
-    letter-spacing: 3px;
-    font-weight: 700;
-    text-overflow: ellipsis;
-    font-size: large;
+    letter-spacing: 4px;
+    font-size: xx-large;
+    font-weight: 800;
+
 }
 
 .burger {
@@ -101,7 +103,7 @@ nav {
         align-items: center;
         width: 30%;
         transform: translateX(100%);
-        transition: transform 0.5s ease-in;
+        transition: transform 0.5s;
 
     }
 
@@ -144,89 +146,198 @@ nav {
 }
 
 
-
-/* Style section 1 */
-
+/* Stile section 1*/
 .home {
-    min-height: 90vh;
+    height: 90vh;
     width: 100%;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(315deg, #9fa4c4 0%, #9e768f 74%);
+
+
+
+}
+
+.container {
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 95%;
+    height: 95%;
 }
 
-.container1 {
-    margin-top: 10px;
-    width: 90%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.left {
-    width: 90%;
-    margin: 0 auto;
+img {
+    width: 400px;
     height: 500px;
-    background: url(../img/frontend.jpeg) no-repeat center / cover;
+    display: flexbox;
     border-radius: 15px;
+    box-shadow: #1F1C2C;
+    box-shadow: 25px 25px 25px rgb(75, 31, 76);
+}
+
+.glass {
+    width: 400px;
+    height: 400px;
+    margin-left: -5%;
+    background-color: rgba(235, 17, 17, 0.1);
+    backdrop-filter: blur(30px);
+    border: 10px solid transparent;
+    background-clip: border-box;
+    box-shadow: 25px 25px 25px rgb(75, 31, 76);
+    border-radius: 15px;
+
+
+
 
 }
 
-.right {
-    margin-bottom: auto;
+.glass h1 {
     display: flex;
-    background: linear-gradient(to right top, #1F1C2C, #928DAB);
-    align-items: center;
     justify-content: center;
-    padding: 20px;
-    border-radius: 15px;
+    padding: 8px;
     color: rgb(187, 163, 130);
-
+    column-width: 200%;
+    font-family: 'Cormorant', serif;
+    text-decoration: none;
+    letter-spacing: 6px;
+    font-size: 300%;
+    font-weight: 900;
 
 }
 
-
-.right h1 {
-    font-size: 40px;
+.glass h2 {
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+    color: rgb(187, 163, 130);
+    text-decoration: none;
+    font-size: 200%;
     font-weight: 800;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Cormorant', serif;
+    margin-left: -20px;
+
 
 }
 
-.right h2 {
-    margin: 20px 0;
-    font-weight: 500;
-    line-height: 25px;
-    font-family: 'Montserrat', sans-serif;
+
+.link a {
+    display: inline-block;
+    justify-content: right;
+    letter-spacing: 2px;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 15px;
+    backdrop-filter: blur(60px);
+    color: black;
+    padding: 20px 60px;
+    font-family: 'Cormorant', serif;
+    font-size: 150%;
+    font-weight: 1000%;
+
+
 }
 
 /* Style the about section*/
-
 .about {
-    min-height: 100vh;
-    width: 100%;
+    height: 100vh;
     display: flex;
-    align-items: center;
     justify-content: center;
-}
-
-.container2 {
-    margin-top: 10px;
-    width: 80%;
-    display: flex;
     align-items: center;
-    justify-content: center;
-}
-
-.container2 h2 {
-    font-size: 60px;
-    font-weight: 800;
-    color: rgb(187, 163, 130);
-    font-family: 'Montserrat', sans-serif;
-}
-
-.container2 p {
-    margin-left: 3%;
     font-family: 'Cormorant', serif;
-    font-size: larger;
+
+}
+
+.book {
+    position: relative;
+    width: 400px;
+    height: 500px;
+    transition: transform 0.5s;
+}
+
+.paper {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    perspective: 1500px;
+
+}
+
+.front,
+.back {
+    background-color: rgba(235, 17, 17, 0.1);
+    backdrop-filter: blur(30px);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    transform-origin: left;
+    transition: transform 0.6s;
+    border-radius: 10%;
+}
+
+.front {
+    z-index: 1;
+    backface-visibility: hidden;
+    border-left: 3px solid #1F1C2C;
+}
+
+.back {
+    z-index: 0;
+}
+
+.front-content,
+.back-content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.back-content {
+    transform: rotateY(180deg)
+}
+
+/* Paper flip effect */
+.flipped .front,
+.flipped .back {
+    transform: rotateY(-180deg);
+}
+
+/* Controller Buttons */
+button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    margin: 40px;
+    transition: transform 0.5s;
+}
+
+button:focus {
+    outline: none;
+}
+
+button:hover i {
+    color: #928DAB;
+}
+
+i {
+    font-size: 50px;
+    color: #1F1C2C;
+}
+
+/* Paper stack order */
+#p1 {
+    z-index: 3;
+}
+
+#p2 {
+    z-index: 2;
+}
+
+#p3 {
+    z-index: 1;
 }
