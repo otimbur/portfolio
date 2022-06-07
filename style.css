@@ -7,15 +7,15 @@
 
 .home {
     background: linear-gradient(to right top, #1F1C2C, #cbb4d4);
-    );
+
 }
 
 .about {
-    background: linear-gradient(to right top, #20002c, #948E99);
+    background: linear-gradient(to right top, #544a7d, #cbb4d4);
 }
 
 .project {
-    background: linear-gradient(to right top, #DAE2F8, #D6A4A4);
+    background: linear-gradient(to right top, #1F1C2C, #cbb4d4);
 }
 
 .contact {
@@ -409,6 +409,14 @@ i {
     justify-content: center;
     width: 400px;
     height: 400px;
+}
+
+/*Project section*/
+.project {
+    height: 100vh;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
 }
 
 
