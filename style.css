@@ -6,11 +6,12 @@
 }
 
 .home {
-    background: linear-gradient(to right top, #1F1C2C, #928DAB);
+    background: linear-gradient(to right top, #1F1C2C, #cbb4d4);
+    );
 }
 
 .about {
-    background: linear-gradient(to right top, #948E99, #2E1437);
+    background: linear-gradient(to right top, #20002c, #948E99);
 }
 
 .project {
@@ -18,7 +19,7 @@
 }
 
 .contact {
-    background: linear-gradient(to right top, #CC95C0, #DBD4B4, #7AA1D2);
+    background: linear-gradient(to right top, #544a7d, #cbb4d4);
 }
 
 a {
@@ -408,4 +409,34 @@ i {
     justify-content: center;
     width: 400px;
     height: 400px;
+}
+
+
+/* Style the contact section*/
+.contact {
+
+    height: 30vh;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact h1 {
+    display: flex;
+    justify-content: center;
+    font-family: 'Cormorant', serif;
+    color: rgb(19, 16, 13);
+    font-weight: bolder;
+
+}
+
+.contact-links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-links a {
+    display: flex;
+    padding: 10px;
 }
