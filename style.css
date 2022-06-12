@@ -6,20 +6,20 @@
 }
 
 .home {
-    background: linear-gradient(to right top, #1F1C2C, #cbb4d4);
-
+    background: #ffdde1;
 }
 
 .about {
-    background: linear-gradient(to right top, #cbb4d4, #1f1c2c);
+    background: #ffdde1;
 }
 
 .project {
-    background: linear-gradient(to right top, #1F1C2C, #cbb4d4);
+    background: #ffdde1;
+
 }
 
 .contact {
-    background: linear-gradient(to right top, #1F1C2C, #cbb4d4);
+    background: #ffdde1;
 }
 
 a {
@@ -174,6 +174,7 @@ i.fa-bars {
 
 .container {
     display: flex;
+    align-items: center;
     width: 95%;
     height: 95%;
 }
@@ -256,7 +257,7 @@ i.fa-bars {
 /*Style cercles*/
 .heading {
     color: rgb(27, 24, 24);
-    font-size: 5rem;
+    font-size: 3rem;
     font-weight: 300;
     text-transform: uppercase;
 }
@@ -283,7 +284,7 @@ i.fa-bars {
 
 .main-container-social {
     position: fixed;
-    bottom: 1em;
+    bottom: 3em;
     right: 1em;
 }
 
@@ -326,7 +327,7 @@ i.fa-bars {
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
-    min-width: 270px;
+    min-width: 250px;
     width: 100%;
     min-height: 100%;
 }
@@ -338,6 +339,7 @@ i.fa-bars {
     margin: 1em;
     transform: rotate(-90deg);
 }
+
 
 .progressbar__svg {
     position: relative;
@@ -359,7 +361,7 @@ i.fa-bars {
 
 
 .shadow-html {
-    filter: drop-shadow(0 0 5px #684141);
+    filter: drop-shadow(0 0 5px #000000);
 }
 
 .shadow-css {
@@ -399,11 +401,6 @@ i.fa-bars {
     transform: translate(-50%, -50%) rotate(90deg);
 }
 
-@-webkit-keyframes anim_circle-html {
-    to {
-        stroke-dashoffset: 22;
-    }
-}
 
 @keyframes anim_circle-html {
     to {
@@ -411,21 +408,10 @@ i.fa-bars {
     }
 }
 
-@-webkit-keyframes anim_circle-css {
-    to {
-        stroke-dashoffset: 66;
-    }
-}
 
 @keyframes anim_circle-css {
     to {
         stroke-dashoffset: 66;
-    }
-}
-
-@-webkit-keyframes anim_circle-js {
-    to {
-        stroke-dashoffset: 88;
     }
 }
 
@@ -588,10 +574,8 @@ i {
 
 /*Project section*/
 .project {
-    height: 100vh;
     width: 100%;
-    align-items: center;
-    justify-content: center;
+    height: 100vh;
 }
 
 .project h1 {
@@ -603,15 +587,49 @@ i {
 
 }
 
-#projectimage {
-    width: 400px;
-    height: 400px;
-    display: flexbox;
-    border-radius: 10px;
-    box-shadow: black;
-    box-shadow: 25px 25px 25px rgb(0, 0, 0);
+.container-1 {
+    display: flex;
+    align-items: flex-start;
+}
+
+.container-1 div {
+    padding: 5px;
+}
+
+.box-1 {
+    flex: 1;
 
 }
+
+.box-2 {
+    flex: 1;
+    order: 4;
+
+}
+
+.box-3 {
+    flex: 1;
+
+}
+
+.box-4 {
+    flex: 1;
+}
+
+.container-1 h2 {
+    display: flex;
+    justify-content: center;
+    padding: 8px;
+    color: rgb(0, 0, 0);
+    column-width: 200%;
+    font-family: 'Cormorant', serif;
+    text-decoration: none;
+    letter-spacing: 6px;
+    font-size: 300%;
+    font-weight: 900;
+}
+
+
 
 
 /* Style the contact section*/
