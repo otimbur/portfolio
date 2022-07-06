@@ -269,6 +269,24 @@ i.fa-bars {
 
 }
 
+#linkproject {
+    display: flex;
+    align-items: center;
+    font-family: 'Cormorant', serif;
+    font-size: xx-large;
+
+
+
+}
+
+
+
+
+#linkproject {
+    text-align: center;
+    color: #000000;
+}
+
 #video-about {
     display: flex;
     box-shadow: black;
